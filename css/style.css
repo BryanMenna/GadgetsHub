@@ -1,0 +1,290 @@
+ @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Mukta:wght@200;300;400&display=swap');
+
+
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body{
+ font-family: 'Mukta','Kanit', sans-serif;
+
+
+}
+.container{
+	max-width: 1400px;
+	margin: 0 auto;
+	
+}
+h2{
+  text-align: center;	
+}
+/*menu de nav*/
+.navbar{
+    background: #FE6700;
+    color: #fff;
+    height: 80px;
+    padding: 10px 12px;
+    position: relative;
+
+}
+.checkbox, .icon{
+	width: 44px;
+	height: 45px;
+	position: absolute;
+	top:17px;
+	right: 19px;
+	cursor: pointer;
+}
+.icon{
+	pointer-events: none;
+	font-size: 40px;
+}
+.checkbox{
+	opacity: 0;
+}
+.cerrar{
+	display: none;
+}
+.checkbox:checked~.menu{
+	display: none;
+}
+.checkbox:checked~.cerrar{
+	display: block;
+}
+.nav_menu{
+	width: 200px;
+	position: absolute;
+	bottom: 200px;
+	
+	right: 0px;
+	/*display: none;*/
+	transition: 250ms;
+}
+
+
+.nav_menu li{
+   list-style: none;
+}
+.nav_menu li a{
+  text-decoration: none;
+  color: #fff;
+  background-color: #969595;
+  display: block;
+  padding: 10px 12px;
+}
+.nav_menu li a:hover{
+	background-color: #B3B3B3;
+}
+.checkbox:checked~.nav_menu{
+	/*display: block;*/
+	top: 80px;
+	
+}
+
+
+.carrito{
+	position: relative;
+	top: 5px;
+	left: 10px;
+}
+
+/*In container*/
+.minibox{
+	background: #E5E1E1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-top: 1px solid #8B8686;
+	padding: 5px;
+
+}
+.In-minibox{
+	border: 2px solid #9F9F9F;
+	border-radius: 10px 10px;
+	background: #fff;
+	width: 170px;
+	height: 14em;
+	margin: 15px;
+}
+button{
+   background: #000;
+   color: #fff;
+   border-radius: 10px 10px;
+   width: 12.5em;
+   height: 2.5em;
+  
+}
+
+ button:hover{
+        transform: scale(1.0);
+        background: #3F3E3E;
+  }
+/*button pc,tv,movil*/
+.buttonpc1{
+	position: relative;
+	top: 35px;
+}
+.buttonpc2{
+  position: relative;
+	top: 11px;
+}
+.buttonpc3{
+	position: relative;
+	top:32px;
+}
+.buttonpc4{
+	position: relative;
+	top: 23px;
+}
+.buttontv1{
+	position: relative;
+	top:13px ;
+}
+.buttontv2{
+	position: relative;
+	top:3px ;
+}
+.buttontv3{
+	position: relative;
+	top:22px ;
+}
+
+.buttonMovil{
+	position: relative;
+	top:27px;
+}
+/*text*/
+.text{
+	position: relative;
+	top:28px;
+}
+div.text_compu1{
+	position: relative;
+	top:9px;
+}
+div.text_compu2{
+	position: relative;
+	bottom: 14px;
+}
+div.text_compu3{
+	position: relative;
+	top: 6px;
+}
+div.text_compu4{
+	position: relative;
+	bottom: 3px;
+}
+div.text_tv1{
+	position: relative;
+	bottom: 12px;
+}
+div.text_tv2{
+	position: relative;
+	bottom:22px;
+}
+div.text_tv3{
+	position: relative;
+	bottom: 3px;
+}
+div.text_tv4{
+	position: relative;
+	bottom: 24px;
+}
+/*imagenes*/
+div.imagen{
+	display: grid;
+}
+img.samsung,.telef,
+.samsung-A14,.Motorola{
+   margin: auto;
+   margin-top:20px ;
+}
+
+img.lenovo,.musimundo,
+.mlstatic,.mlstatic1{
+	margin: auto;
+	margin-top: 20px;
+}
+
+
+img.mlstatic2,.samsung_tv,
+.radiosapienza_tv,.fravega{
+	margin: auto;
+	margin-top: 20px;
+}
+
+
+/* redes */
+.red{
+	 height: 200px;
+	 background: #2A2A2A;
+	 text-align: center;
+	 padding: 5px;
+	
+
+}
+.red li{
+	display: block;
+	margin:10px ;
+	text-align: center;
+
+}
+.redes{
+	text-decoration: none;
+	display: block;
+	margin: 5px;
+	color:#5848BB;
+	font-size: 13px;
+}
+.fa-facebook,.fa-instagram,.fa-github{
+    font-size: 20px;
+    color:#fff;
+   }
+   .red h3{
+   	color: #D6D6D6;
+   }
+
+
+
+
+
+
+@media(min-width:750px){
+   .checkbox,.menu,.cerrar{
+   	display: none;
+   }
+
+   .nav_menu{
+   	top: 0;
+   	z-index: 1;
+   	width: unset;
+   	height: 40px;
+   	display: flex;
+   }
+   .nav_menu li {
+   	position: relative;
+   	top: 10px;
+   }
+  
+   .nav_menu li a{
+    background-color:#FE6700 ;
+    font-size: 17px;
+   }
+   .nav_menu li a:hover{
+   	background-color: #FE6700;
+   }
+   .minibox{
+   	flex-direction: row;
+   }
+   .In-minibox{
+   	margin: 29px;
+    margin-right: 35px;
+   }
+   h2{
+   	text-align: center;
+   }
+}
+
